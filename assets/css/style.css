@@ -1,0 +1,280 @@
+/* Header com logo e menu de navegação com ícones */
+header {
+  background-color: #530082;
+  color: #F5F5F5;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;  /* Mantém o header fixo ao rolar a página */
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  width: 98%;
+  top: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 250px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo i {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+nav ul.menu {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+}
+
+nav ul.menu li {
+  margin-left: 30px;
+}
+
+nav ul.menu li a {
+  color: #F5F5F5;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+nav ul.menu li a i {
+  margin-right: 8px;
+}
+
+nav ul.menu li a:hover {
+  text-decoration: underline;
+}
+
+.cta-button:hover {
+  background: #530082;
+}
+
+/* Seção Features */
+.features {
+  padding: 2rem;
+  background: #F5F5F5;
+  text-align: center;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature {
+  width: 30%;
+  margin: 1rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #BA4DE3;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.feature img.feature-image {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature h2 {
+  color: #8A05BE;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #8A05BE;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção Purchase */
+.purchase {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #8A05BE;
+  color: #F5F5F5;
+}
+
+.purchase h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.purchase p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.purchase-button {
+  background: #BA4DE3;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.purchase-button:hover {
+  background: #530082;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #191919;
+  color: #F5F5F5;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/* Seção Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #8A05BE, #BA4DE3);
+  min-height: 80vh;
+  color: #fff;
+  position: relative;
+}
+
+/* Centralizar o conteúdo e imagem flutuante */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  flex: 1;
+  max-width: 600px;
+  padding-right: 2rem;
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+.hero-content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.hero-content .cta-button {
+  background: #fff;
+  color: #8A05BE;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  margin-bottom: 3rem; /* Espaço maior entre botão e ícones */
+}
+
+.hero-content .cta-button:hover {
+  background: #530082;
+  color: #fff;
+}
+
+/* Ícones e itens da seção hero */
+.hero-features {
+  display: flex;
+  justify-content: space-around; /* Distribui os ícones de forma equilibrada */
+  flex-wrap: wrap;
+  margin-top: 4rem; /* Mantém o espaçamento */
+  width: 100%;
+}
+
+.hero-feature {
+  text-align: center;
+  flex: 1;
+  margin: 10px;
+  color: #fff;
+  max-width: 30%;
+}
+
+.hero-feature i {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.hero-feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-feature p {
+  font-size: 1rem;
+}
+
+/* Imagem flutuante do ebook - Centralizada na segunda metade */
+.ebook-floating {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  animation: float 4s ease-in-out infinite;
+  opacity: 0.9; /* Leve transparência */
+}
+
+.ebook-floating img {
+  max-width: 28%; /* Faz com que a imagem ocupe uma porção menor da tela */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Animação flutuante */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+}
